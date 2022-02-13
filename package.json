@@ -1,9 +1,9 @@
 {
   "name": "svelte-popup",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "/dist/sveltePopup.cjs.min.js",
-  "model": "/dist/sveltePopup.esm.min.js",
+  "module": "/dist/sveltePopup.es.min.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
