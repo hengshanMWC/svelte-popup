@@ -6,6 +6,8 @@ import svelte from 'rollup-plugin-svelte'
 import pkg from './package.json'
 import typescript from '@rollup/plugin-typescript'
 import tscompile from 'typescript'
+import postcss from 'rollup-plugin-postcss';
+import svelteConfig from './svelte.config.js'
 let moduleName = pkg.name
 // 检查是否是合法的 npm 包名
 if (!validateNpmPackageName(moduleName)) {
@@ -20,11 +22,16 @@ if (/^@.+\//g.test(moduleName)) {
 // 将其他形式的命名规则转换为驼峰命名
 moduleName = camelcase(moduleName)
 const plugins = [
+  svelte({
+    preprocess: svelteConfig.preprocess,
+  }),
+  postcss({
+    extensions: ['.css']
+  }),
+  json(),
   typescript({
     typescript: tscompile,
   }),
-  json(),
-  svelte(),
   terser({
     compress: {
       pure_getters: true,
