@@ -18,14 +18,14 @@ pnpm i svelte-popup
 
 ```js
 <script lang="ts">
-  import { Popup } from "svelte-popup";
+  import { Popup } from "svelte-popup"; // 4kb
   let show = true
   function toggle() {
     show = !show;
   }
 </script>
 <main>
-  <button on:click={toggle}>center:{show ? "隐藏" : "显示"}</button>
+  <button on:click={toggle}>center:{show ? "hide" : "show"}</button>
   <Popup show={show} on:change={toggle}>
     <div class="center box">popup</div>
   </Popup>
@@ -34,12 +34,12 @@ pnpm i svelte-popup
 
 # Prop
 
-| name     |                                 explain |                   type                   | default |
-| -------- | --------------------------------------: | :--------------------------------------: | :-----: |
-| show     |                             show or not |                 boolean                  |    -    |
-| position |                         eject direction | center \| top \| right \| bottom \| left | center  |
-| duration | transition attribute duration ｜ number |                   300                    |
-| delay    |              transition attribute delay |                  number                  |    0    |
+| name     |                       explain |                   type                   | default |
+| -------- | ----------------------------: | :--------------------------------------: | :-----: |
+| show     |                   show or not |                 boolean                  |    -    |
+| position |               eject direction | center \| top \| right \| bottom \| left | center  |
+| duration | transition attribute duration |                  number                  |   300   |
+| delay    |    transition attribute delay |                  number                  |    0    |
 
 # slot
 
