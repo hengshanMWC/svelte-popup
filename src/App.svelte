@@ -23,11 +23,11 @@
 </script>
 
 <main>
-  <button on:click={toggleCenter}>center:{showCenter ? "隐藏" : "显示"}</button>
-  <button on:click={toggleTop}>top:{showTop ? "隐藏" : "显示"}</button>
-  <button on:click={toggleRight}>right:{showRight ? "隐藏" : "显示"}</button>
-  <button on:click={toggleBottom}>bottom:{showBottom ? "隐藏" : "显示"}</button>
-  <button on:click={toggleLeft}>left:{showLeft ? "隐藏" : "显示"}</button>
+  <button on:click={toggleCenter}>center:{showCenter ? "hide" : "show"}</button>
+  <button on:click={toggleTop}>top:{showTop ? "hide" : "show"}</button>
+  <button on:click={toggleRight}>right:{showRight ? "hide" : "show"}</button>
+  <button on:click={toggleBottom}>bottom:{showBottom ? "hide" : "show"}</button>
+  <button on:click={toggleLeft}>left:{showLeft ? "hide" : "show"}</button>
   <Popup show={showCenter} on:change={toggleCenter}>
     <div class="center box">center</div>
   </Popup>
