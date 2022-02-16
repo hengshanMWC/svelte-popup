@@ -9,10 +9,9 @@
     "url": "git+https://github.com/hengshanMWC/svelte-popup.git"
   },
   "keywords": [
-    "http",
-    "api",
-    "axios",
-    "fly.io"
+    "popup",
+    "svelte",
+    "sveltejs"
   ],
   "author": "mwc",
   "license": "ISC",
