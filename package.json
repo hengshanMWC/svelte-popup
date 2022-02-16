@@ -1,9 +1,24 @@
 {
   "name": "svelte-popup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "main": "/dist/sveltePopup.cjs.min.js",
   "module": "/dist/sveltePopup.es.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hengshanMWC/svelte-popup.git"
+  },
+  "keywords": [
+    "popup",
+    "svelte",
+    "sveltejs"
+  ],
+  "author": "mwc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hengshanMWC/svelte-popup/issues"
+  },
+  "homepage": "https://github.com/hengshanMWC/svelte-popup#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
